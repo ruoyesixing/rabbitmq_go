@@ -5,5 +5,10 @@ import (
 )
 
 type RabbitMQ struct {
-	Conn *amqp.Connection
+	Conn      *amqp.Connection
+	Channel   *amqp.Channel
+	Queuename string
+	Exchange  string
+	Key       string
+	Mqurl     string
 }
